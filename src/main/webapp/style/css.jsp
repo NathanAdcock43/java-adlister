@@ -5,7 +5,8 @@
   Time: 4:49 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+response.setContentType(type="text/css"; charset=utf-8");
 
 *{
 box-sizing: border-box;
