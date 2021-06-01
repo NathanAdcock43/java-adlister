@@ -7,10 +7,16 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <title>Pick a color</title>
+</head>
+<body>
+<form name="ColorChoice" action = "pickcolor.jsp" method="post">
+    <label for="ColorChoice">Choose a Color</label>
+    <input id="ColorChoice" name="ColorChoice" type="text">
+    <%= request.getParameter("ColorChoice")%>
+    <br>
+    <input type="submit" value="Submit Details">
+</form>
+</body>
 </html>

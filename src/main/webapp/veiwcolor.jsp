@@ -7,10 +7,15 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <title>Here is your color!</title>
+    <style>
+        body{
+            background-color: $(ColorChoice);
+        }
+    </style>
+</head>
+<body>
+<%= request.getParameter("ColorChoice")%>
+</body>
 </html>
