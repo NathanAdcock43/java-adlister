@@ -12,7 +12,7 @@
 </head>
 <body>
 
-testing
+<% request.setAttribute("admin", "admin"); %>
 
 </body>
 </html>

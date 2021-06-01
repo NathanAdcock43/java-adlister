@@ -13,4 +13,13 @@ public class ServletAds extends HttpServlet {
         request.getRequestDispatcher("/ads/index.jsp").forward(request, response);
     }
 
+//    @Override
+//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+////        Long Id = request.getParameter(1L);
+//        String UserName = request.getParameter("UserName");
+//        String Description = request.getParameter("Description");
+//        String Title = request.getParameter("Title");
+//        AdModel yourAd = new AdModel(Id, UserName, Description, Title);
+//        response.sendRedirect("/ads/index");
+//    }
 }
