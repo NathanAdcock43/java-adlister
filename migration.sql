@@ -21,3 +21,8 @@ CREATE TABLE ads (
         ON DELETE CASCADE
 );
 
+INSERT INTO users(username, email, password)
+VALUES ('Floyd Pink', 'theWolfOfTheWall@yahoo.com', 'pinkfloyd');
+
+INSERT INTO users(username, email, password)
+VALUES ('Young Neil', 'heartofgold@gmail.com', 'neilyoung');
