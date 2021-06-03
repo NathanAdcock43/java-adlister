@@ -11,6 +11,10 @@ CREATE TABLE IF NOT EXISTS users (
     );
 
 
+INSERT INTO users (id, username, email, password)
+    VALUE(19, 'Floyd Pink','TheWolfOfTheWall@gmail.com', 'pinkfloyd'),
+        (20, 'Young Neil', 'HeartOfGold@gmail.com', 'neilyoung');
+
 DROP TABLE IF EXISTS ads;
 
 CREATE TABLE IF NOT EXISTS ads (
@@ -20,3 +24,6 @@ CREATE TABLE IF NOT EXISTS ads (
     description VARCHAR(1000),
     PRIMARY KEY (id)
     );
+
+INSERT INTO ads (id, user_id, title, description)
+    VALUE(19, 1979, 'Just another brink', 'great for building social dissidence');
