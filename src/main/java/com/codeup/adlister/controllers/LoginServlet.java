@@ -31,6 +31,8 @@ public class LoginServlet extends HttpServlet {
         }
 
         boolean validAttempt = password.equals(user.getPassword());
+//        boolean validAttempt = BCrypt.checkpw("password123", hash);
+//        System.out.println(passwordsMatch); // true
 
         if (validAttempt) {
             request.getSession().setAttribute("user", user);
