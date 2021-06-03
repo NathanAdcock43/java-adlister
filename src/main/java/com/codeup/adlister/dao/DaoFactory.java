@@ -21,3 +21,11 @@ public class DaoFactory {
         return adsDao;
     }
 }
+
+
+//java.lang.RuntimeException: Error creating a new ad.
+//	com.codeup.adlister.dao.MySQLAdsDao.insert(MySQLAdsDao.java:54)
+//	com.codeup.adlister.controllers.CreateAdServlet.doPost(CreateAdServlet.java:26)
+//	javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+//	javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+//	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
